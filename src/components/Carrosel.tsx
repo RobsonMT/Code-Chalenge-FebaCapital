@@ -30,7 +30,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative w-full h-screen overflow-hidden shadow-lg">
+    <div className="relative w-full h-screen overflow-hidden">
       {/* Slides */}
       <div
         className="flex transition-transform duration-700 ease-in-out"
@@ -55,20 +55,31 @@ const Carousel = () => {
       {/* Botões */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-4 -translate-y-1/2 bg-black/70 p-2 shadow-md cursor-pointer"
+        className="hidden md:flex absolute top-1/2 left-4 -translate-y-1/2 bg-black/70 p-4 shadow-md cursor-pointer z-30"
       >
         <FaLongArrowAltLeft className="w-6 h-6 text-white" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-4 -translate-y-1/2 bg-black/70 p-2 shadow-md cursor-pointer"
+        className="hidden md:flex absolute top-1/2 right-4 -translate-y-1/2 bg-black/70 p-4 shadow-md cursor-pointer z-30"
       >
         <FaLongArrowAltRight className="w-6 h-6 text-white" />
       </button>
 
-      <div className="absolute inset-0 flex flex-col justify-center items-start px-8 md:px-20 text-white">
-        <h1 className="text-3xl md:text-5xl font-bold mb-4">Barra View</h1>
-        <p className="text-lg md:text-xl text-black px-4 py-1 rounded-[4px] mb-6 bg-[#DCF8B1]">
+      {/* Botões mobile (juntos no canto inferior direito) */}
+      <div className="flex md:hidden absolute bottom-20 left-6 space-x-1 z-20">
+        <button onClick={prevSlide} className="bg-black/70 p-4 shadow-md">
+          <FaLongArrowAltLeft className="w-6 h-6 text-white" />
+        </button>
+        <button onClick={nextSlide} className="bg-black/70 p-4 shadow-md">
+          <FaLongArrowAltRight className="w-6 h-6 text-white" />
+        </button>
+      </div>
+
+      <div className="absolute inset-0 flex flex-col justify-center items-start px-8 md:px-30 text-white">
+        <p className="uppercase mb-2">Pré Lançamento</p>
+        <h1 className="text-5xl font-bold mb-4">Barra View</h1>
+        <p className="text-sm sm:text-lg md:text-xl text-black px-3 py-1 rounded-[4px] mb-6 bg-[#DCF8B1]">
           Apartamento com 3 dormitórios sendo 1 suíte
         </p>
         <button className="px-4 py-2 border-2 rounded-lg text-lg font-medium transition-colors">
