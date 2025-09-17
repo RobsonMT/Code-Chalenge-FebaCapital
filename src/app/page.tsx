@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Carrosel from "@/components/Carrosel";
 import Form from "@/components/Form";
+import SectionFilter from "@/components/SectionFilter";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Carrosel />
       <About />
       <Form />
+      <SectionFilter />
     </div>
   );
 }
