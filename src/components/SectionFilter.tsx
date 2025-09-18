@@ -133,7 +133,7 @@ const SectionFilter = () => {
           </div>
         </div>
       </div>
-      <div className="min-w-full flex justify-center mt-10">
+      <div className="min-w-full flex justify-center mt-20 mb-20">
         <button className="uppercase h-[40px] px-4 py-0 border-gray-400 text-gray-400 border-2 rounded-sm text-lg font-medium transition-colors cursor-pointer">
           carregar mais
         </button>
