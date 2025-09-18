@@ -1,6 +1,9 @@
 const About = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center md:items-start max-w-7xl mx-auto px-6 py-16">
+    <div
+      id="sobre"
+      className="flex flex-col md:flex-row items-center md:items-start max-w-7xl mx-auto px-6 py-28"
+    >
       {/* Banner / imagem */}
       <div className="hidden md:block md:w-1/2 relative">
         <img

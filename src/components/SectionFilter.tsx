@@ -3,7 +3,10 @@ import { FaFilter } from "react-icons/fa";
 
 const SectionFilter = () => {
   return (
-    <div className="min-w-full max-w-7xl mx-auto px-8 py-16">
+    <div
+      id="empreendimentos"
+      className="min-w-full max-w-7xl mx-auto px-8 py-28"
+    >
       <div className="flex flex-col md:flex-row justify-between mb-8">
         <h2 className="text-4xl sm:text-5xl mb-4 font-light flex flex-col">
           Confira todos os{" "}

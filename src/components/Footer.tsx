@@ -5,7 +5,10 @@ import { MdWhatsapp } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="h-full w-full bg-black flex flex-col px-8 py-16">
+    <div
+      id="contatos"
+      className="h-full w-full bg-black flex flex-col px-8 py-16"
+    >
       {/* Conteúdo principal */}
       <div className="h-full w-full bg-black flex flex-col md:flex-row gap-10 md:gap-20 mb-8">
         {/* Logo + descrição */}
@@ -27,19 +30,19 @@ const Footer = () => {
           <h3 className="uppercase text-[#48B79D] mb-2">Navegue no site</h3>
           <ul className="flex flex-col gap-2">
             <li className="uppercase">
-              <a href="">Home</a>
+              <a href="/#home">Home</a>
             </li>
             <li className="uppercase">
-              <a href="">Sobre a liva</a>
+              <a href="/#sobre">Sobre a liva</a>
             </li>
             <li className="uppercase">
-              <a href="">Empreendimentos</a>
+              <a href="/#empreendimentos">Empreendimentos</a>
             </li>
             <li className="uppercase">
-              <a href="">Notícias</a>
+              <a href="/#noticias">Notícias</a>
             </li>
             <li className="uppercase">
-              <a href="">Contato</a>
+              <a href="/#contatos">Contato</a>
             </li>
           </ul>
         </div>

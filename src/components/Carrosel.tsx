@@ -30,7 +30,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div id="home" className="relative w-full h-screen overflow-hidden">
       {/* Slides */}
       <div
         className="flex transition-transform duration-700 ease-in-out"
@@ -55,13 +55,13 @@ const Carousel = () => {
       {/* Botões */}
       <button
         onClick={prevSlide}
-        className="hidden md:flex absolute top-1/2 left-4 -translate-y-1/2 bg-black/70 p-4 shadow-md cursor-pointer z-30"
+        className="hidden md:flex absolute top-1/2 left-0 -translate-y-1/2 bg-black/70 p-4 shadow-md cursor-pointer z-30"
       >
         <FaLongArrowAltLeft className="w-6 h-6 text-white" />
       </button>
       <button
         onClick={nextSlide}
-        className="hidden md:flex absolute top-1/2 right-4 -translate-y-1/2 bg-black/70 p-4 shadow-md cursor-pointer z-30"
+        className="hidden md:flex absolute top-1/2 right-0 -translate-y-1/2 bg-black/70 p-4 shadow-md cursor-pointer z-30"
       >
         <FaLongArrowAltRight className="w-6 h-6 text-white" />
       </button>
